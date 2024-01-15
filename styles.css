@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 * {
   margin: 0;
@@ -10,7 +10,7 @@
 }
 
 .body{
-  font-family: 'Roboto Slab', 'serif';
+  font-family: 'Roboto', sans-serif;
 }
 
 #header-logo{
@@ -22,49 +22,63 @@
   font-size: 18px;
   color: #E5E7EB;
   margin: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .navbar{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 100px 0;
 }
 
-.navbar-left,.navbar-right{
+.navbar-left{
   display: flex;
   width: 50%;
-  justify-content: center;
   align-items: center;
 }
 
+.navbar-right{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  justify-content:space-between;
+  
+}
+
+.navbar-item-margin{
+  margin-right: 15px;
+
+}
+
+.navbar-item{
+  color: white;
+  text-decoration: none;
+}
+
+ul{
+  color: white;
+}
+
 h1{
-  font-size: 48px;
+  font-size: 36px;
   font-weight: bolder;
   color: #F9FAF8;
+  margin-bottom: 30px;
 }
 
 .content{
   display: flex;
-  flex-direction: row;
+  padding: 50px 100px 125px;
 }
 
 .content-right{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 50%;
+  
 }
 
 .content-left{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  justify-content: center;
-  margin-left: 150px;
-}
-
-img{
-  margin: 50px;
+  
 }
 
 .p-first{
@@ -86,6 +100,7 @@ h2{
   font-weight: bolder;
   color: #1f2937;
   text-align: center;
+  margin-top: 30px;
 }
 
 .row-of-blue-divs{
@@ -93,7 +108,7 @@ h2{
   flex-direction: row;
   justify-content: space-between;
   max-width: 100%;
-  margin: 100px;
+  margin: 50px;
 }
 
 .second-section{
@@ -104,7 +119,8 @@ h2{
 
 .box-blue-msg p{
   text-align: center;
-  width: 210px;
+  width: 180px;
+  margin-bottom: 10px;
 }
 
 
@@ -112,10 +128,13 @@ h2{
   border: 3px solid #3882F6;
   width: 200px;
   height: 200px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
-  gap: 10px;
+  gap: 5px;
+  flex-direction: column;
+  margin-bottom: 10px;
+
   
 }
 
@@ -123,8 +142,9 @@ h2{
   background-color: #E5E7EB;
   height: 500px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  margin: 10px;
 }
 
 h3{
@@ -133,6 +153,7 @@ h3{
   font-weight: lighter;
   color: #1F3927;
   text-align: center;
+  margin: 100px;
 }
 
 .p-third{
@@ -159,6 +180,7 @@ h3{
   height: 40%;
   display: flex;
   flex-direction: row;
+  border-radius: 10px;
 }
 
 .left{
@@ -183,6 +205,7 @@ h4{
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  border-radius: 10px;
 }
 
 .btn-last-div{
@@ -190,8 +213,10 @@ h4{
   color: white;
   width: 100px;
   height: 40px;
-  border: 1px #FFFFFF;
-  border-radius: 10px white;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-right: 100px;
+  text-align: center;
 }
 
 .footer{
